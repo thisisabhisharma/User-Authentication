@@ -12,7 +12,7 @@ process.env.SECRET_KEY = 'secret'
 
 // sign up 
 
-users.post("/todo/api/register", (req, res) => {
+users.post("/register", (req, res) => {
     const today = new Date()
     const userData = {
         first_name: req.body.first_name,
@@ -52,7 +52,7 @@ users.post("/todo/api/register", (req, res) => {
 
 // login
 
-users.post("/todo/api/login", (req, res) => {
+users.post("/login", (req, res) => {
     User.findOne({
         where: {
             email: req.body.email
@@ -75,14 +75,5 @@ users.post("/todo/api/login", (req, res) => {
     })
 })
 
-// create todo 
-
-users.post("/todo/api/create-todo", (req, res) => {
-    User.findOne({
-        where: {
-            
-        }
-    })
-})
 
 module.exports = users

@@ -4,7 +4,7 @@ import Login from '@/components/Login'
 import Register from '@/components/Register'
 import Profile from '@/components/Profile'
 import Welcome from '@/components/Welcome'
-import Home from '../views/home.vue'
+import Home from '@/components/Home'
 
 Vue.use(Router)
 
