@@ -1,0 +1,7 @@
+please install these packages first
+
+<<<<<<<< these are to be installed in outer folder >>>>>
+npm install express sequelize mysql orc 
+
+<<<<<<<< these are to be installed in client folder >>>>>
+npm install -g @vue/cli
